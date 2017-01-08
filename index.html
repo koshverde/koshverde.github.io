@@ -5,8 +5,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Macondo' rel='stylesheet' type='text/css'>
 	<style type="text/css">
 		body {
-			background-color: #02042d;
-			background-image: url("background-a-1920.jpg");
+			background-color: #000;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-position: center top;
@@ -14,7 +13,6 @@
 		}
 		h1 {
 			font-family: Macondo, sans-serif;
-			font-size: 5rem;
 			text-align: center;
 			position: absolute;
 			top: 0;
@@ -22,8 +20,41 @@
 			bottom: 0;
 			right: 0;
 			margin: auto;
+			margin-top: 4em;
 			width: 10em;
 			height: 1em;
+		}
+		@media only screen and (max-width: 640px) {
+		    body {
+			background-image: url("background-640.jpg");
+		    }
+		    h1 {
+			font-size: 2rem;
+		    }
+		}
+		@media only screen and (min-width: 641px) and (max-width: 1024px) {
+		    body {
+			background-image: url("background-1024.jpg");
+		    }
+		    h1 {
+			font-size: 3rem;
+		    }
+		}
+		@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+		    body {
+			background-image: url("background-1440.jpg");
+		    }
+		    h1 {
+			font-size: 4rem;
+		    }
+		}
+		@media only screen and (min-width: 1440px) {
+		    body {
+			background-image: url("background-1920.jpg");
+		    }
+		    h1 {
+			font-size: 5rem;
+		    }
 		}
 	</style>
 </head>
